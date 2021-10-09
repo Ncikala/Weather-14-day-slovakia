@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+</head>
+<body>
+  <style>
+    body {
+    background: #fff;
+    font-family: Times;
+    font-weight: 999;
+    color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.customer, .customer2 {
+  border-collapse: collapse;
+}
+
+.box {
+  width: 50px;
+  height: 200px;
+  position: relative;
+} 
+
+.dates {
+  font-size: 9px;
+  text-align: center;
+  margin-top: 0px;
+  border: 1px solid #000;
+  padding: 3px;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 2px;
+  background: #000;
+}
+
+.temp-max {
+  border: 1px solid #000;
+  height: 200px;
+  color: #FF8700;
+}
+
+.temp-min {
+  border: 1px solid #000;
+  height: 200px; 
+  color: #00ABFF;
+}
+
+.txt {
+  position: absolute;
+  text-align: center;
+  margin-left: -2%;
+  margin-top: 0px;
+  border: 1px solid #000;
+  padding: 2px;
+  width: 50px;
+}
+
+.txt2 {
+  position: absolute;
+  text-align: center;
+  margin-left: -2%;
+  margin-top: 173px;
+  border: 1px solid #000;
+  padding: 2px;
+  width: 50px;
+}
+
+.temp-max, .tmpMax {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax {
+  stroke-dashoffset: 40;
+}
+
+.temp-min, .tmpMin {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin {
+  stroke-dashoffset: 150;
+}
+
+.temp-max, .tmpMax2 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax2 {
+  stroke-dashoffset: 80;
+}
+
+.temp-min, .tmpMin2 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin2 {
+  stroke-dashoffset: 120;
+}
+
+.temp-max, .tmpMax3 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax3 {
+  stroke-dashoffset: 70;
+}
+
+.temp-min, .tmpMin3 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin3 {
+  stroke-dashoffset: 140;
+}
+
+.temp-max, .tmpMax4 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax4 {
+  stroke-dashoffset: 80;
+}
+
+.temp-min, .tmpMin4 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin4 {
+  stroke-dashoffset: 160;
+}
+
+.temp-max, .tmpMax5 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax5 {
+  stroke-dashoffset: 100;
+}
+
+.temp-min, .tmpMin5 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin5 {
+  stroke-dashoffset: 120;
+}
+
+.temp-max, .tmpMax6 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax6 {
+  stroke-dashoffset: 80;
+}
+
+
+.temp-min, .tmpMin6 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin6 {
+  stroke-dashoffset: 110;
+}
+
+
+.temp-max, .tmpMax7 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax7 {
+  stroke-dashoffset: 100;
+}
+
+
+.temp-min, .tmpMin7 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin7 {
+  stroke-dashoffset: 100;
+}
+
+
+
+.temp-max, .tmpMax8 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax8 {
+  stroke-dashoffset: 90;
+}
+
+
+.temp-min, .tmpMin8 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin8 {
+  stroke-dashoffset: 90;
+}
+
+
+.temp-max, .tmpMax9 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax9 {
+  stroke-dashoffset: 90;
+}
+
+
+.temp-min, .tmpMin9 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin9 {
+  stroke-dashoffset: 70;
+}
+
+
+
+.temp-max, .tmpMax10 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax10 {
+  stroke-dashoffset: 40;
+}
+
+
+.temp-min, .tmpMin10 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin10 {
+  stroke-dashoffset: 100;
+}
+
+
+.temp-max, .tmpMax11 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax11 {
+  stroke-dashoffset: 50;
+}
+
+
+.temp-min, .tmpMin11 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin11 {
+  stroke-dashoffset: 80;
+}
+
+
+.temp-max, .tmpMax12 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax12 {
+  stroke-dashoffset: 80;
+}
+
+
+.temp-min, .tmpMin12 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin12 {
+  stroke-dashoffset: 60;
+}
+
+
+.temp-max, .tmpMax13 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax13 {
+  stroke-dashoffset: 120;
+}
+
+
+.temp-min, .tmpMin13 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin13 {
+  stroke-dashoffset: 50;
+}
+
+
+.temp-max, .tmpMax14 {
+  stroke-dasharray: 200;
+}
+
+.temp-max, .tmpMax14 {
+  stroke-dashoffset: 160;
+}
+
+
+.temp-min, .tmpMin14 {
+  stroke-dasharray: 200;
+}
+
+.temp-min, .tmpMin14 {
+  stroke-dashoffset: 40;
+}
+
+
+
+@media only screen and (max-width: 730px){
+.container {
+  overflow: auto;
+  width: auto;
+  margin: 0 auto;
+  height: 500px;
+}
+
+
+.box {
+  width: 50px;
+  height: 200px;
+  position: relative;
+} 
+
+.dates {
+  font-size: 9px;
+  text-align: center;
+  margin-top: 0px;
+  border: 1px solid #000;
+  padding: 3px;
+}
+
+.date {
+  font-weight: 999;
+  text-align: center;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 2px;
+  background: #000;
+}
+
+.temp-max {
+  border: 1px solid #000;
+  height: 200px;
+  color: #FF8700;
+}
+
+.temp-min {
+  border: 1px solid #000;
+  height: 200px; 
+  color: #00ABFF;
+}
+
+.txt {
+  position: absolute;
+  text-align: center;
+  margin-left: -2%;
+  margin-top: 0px;
+  border: 1px solid #000;
+  padding: 2px;
+  width: 50px;
+}
+
+.txt2 {
+  position: absolute;
+  text-align: center;
+  margin-left: -2%;
+  margin-top: 173px;
+  border: 1px solid #000;
+  padding: 2px;
+  width: 50px;
+  }
+
+}
+ 
+  </style>
+<center>
+  <div class="container"> 
+<table class="customer">
+  <tr class="customer2">
+    <th>
+          <div class="box">
+            <div class="dates">
+          <p class="date" id="date"></p>
+          </div>
+          <img src="https://bmcdn.nl/assets/weather-icons/v1.5/clear-day.svg" class="img" />
+          <div class="temp-max">
+            <p class="txt">17&deg;C</p>
+            <svg class="tmpMax" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+              <line x1="10" y1="180" x2="10" y2="0" />
+            </svg>
+          </div>
+          <div class="temp-min">
+            <p class="txt2">3&deg;C</p>
+            <svg class="tmpMin" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+              <line x1="10" y1="0" x2="10" y2="180" />
+            </svg>
+          </div>
+          </div>
+        </th>
+        
+        <th>
+          <div class="box">
+          <div class="dates">
+          <p class="date" id="date2"></p>
+          </div>
+          <img src="https://bmcdn.nl/assets/weather-icons/v1.5/partly-cloudy-day-rain.svg" class="img" />
+          <div class="temp-max">
+            <p class="txt">13&deg;C</p>
+            <svg class="tmpMax2" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+              <line x1="10" y1="180" x2="10" y2="0" />
+            </svg>
+          </div>
+          <div class="temp-min">
+            <p class="txt2">0&deg;C</p>
+            <svg class="tmpMin2" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+              <line x1="10" y1="0" x2="10" y2="180" />
+            </svg>
+          </div>
+          </div>
+        </th>
+        
+        <th>
+          <div class="box">
+            <div class="dates">
+          <p class="date" id="date3"></p>
+          </div>
+            <img src="https://bmcdn.nl/assets/weather-icons/v1.5/partly-cloudy-day-rain.svg" class="img" />
+            <div class="temp-max">
+              <p class="txt">14&deg;C</p>
+              <svg class="tmpMax3" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+                <line x1="10" y1="180" x2="10" y2="0" />
+              </svg>
+            </div>
+            <div class="temp-min">
+              <p class="txt2">2&deg;C</p>
+              <svg class="tmpMin3" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+              <line x1="10" y1="0" x2="10" y2="180" />
+            </svg> 
+            </div>
+          </div>
+        </th>
+        
+        <th>
+          <div class="box">
+            <div class="dates">
+          <p class="date" id="date4"></p>
+          </div>
+            <img src="https://bmcdn.nl/assets/weather-icons/v1.5/rain.svg" class="img" />
+            <div class="temp-max">
+              <p class="txt">13&deg;C</p>
+              <svg class="tmpMax4" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+                <line x1="10" y1="180" x2="10" y2="0" />
+              </svg>
+            </div>
+            <div class="temp-min">
+              <p class="txt2">4&deg;C</p>
+              <svg class="tmpMin4" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+              <line x1="10" y1="0" x2="10" y2="180" />
+            </svg> 
+            </div>
+          </div>
+        </th>
+        
+        <th>
+          <div class="box">
+            <div class="dates">
+          <p class="date" id="date5"></p>
+          </div>
+            <img src="https://bmcdn.nl/assets/weather-icons/v1.5/partly-cloudy-day-rain.svg" class="img" />
+            <div class="temp-max">
+            <p class="txt">11&deg;C</p>
+            <svg class="tmpMax5" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+              <line x1="10" y1="180" x2="10" y2="0" />
+            </svg>
+            </div>
+            <div class="temp-min">
+              <p class="txt2">2&deg;C</p>
+              <svg class="tmpMin5" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+                <line x1="10" y1="0" x2="10" y2="180" />
+              </svg>
+           </div>
+       </div>
+    </th>
+    
+    <th>
+          <div class="box">
+            <div class="dates">
+          <p class="date" id="date6"></p>
+          </div>
+            <img src="https://bmcdn.nl/assets/weather-icons/v1.5/partly-cloudy-day-rain.svg" class="img" />
+            <div class="temp-max">
+            <p class="txt">13&deg;C</p>
+            <svg class="tmpMax6" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+              <line x1="10" y1="180" x2="10" y2="0" />
+            </svg>
+            </div>
+            <div class="temp-min">
+              <p class="txt2">1&deg;C</p>
+              <svg class="tmpMin6" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+                <line x1="10" y1="0" x2="10" y2="180" />
+              </svg>
+           </div>
+       </div>
+    </th>
+    
+    <th>
+          <div class="box">
+            <div class="dates">
+          <p class="date" id="date7"></p>
+          </div>
+            <img src="https://bmcdn.nl/assets/weather-icons/v1.5/partly-cloudy-day-rain.svg" class="img" />
+            <div class="temp-max">
+            <p class="txt">11&deg;C</p>
+            <svg class="tmpMax7" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+              <line x1="10" y1="180" x2="10" y2="0" />
+            </svg>
+            </div>
+            <div class="temp-min">
+              <p class="txt2">0&deg;C</p>
+              <svg class="tmpMin7" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+                <line x1="10" y1="0" x2="10" y2="180" />
+              </svg>
+           </div>
+       </div>
+    </th>
+    
+    <th>
+          <div class="box">
+            <div class="dates">
+          <p class="date" id="date8"></p>
+          </div>
+            <img src="https://bmcdn.nl/assets/weather-icons/v1.5/partly-cloudy-day.svg" class="img" />
+            <div class="temp-max">
+            <p class="txt">12&deg;C</p>
+            <svg class="tmpMax8" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+              <line x1="10" y1="180" x2="10" y2="0" />
+            </svg>
+            </div>
+            <div class="temp-min">
+              <p class="txt2">-1&deg;C</p>
+              <svg class="tmpMin8" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+                <line x1="10" y1="0" x2="10" y2="180" />
+              </svg>
+           </div>
+       </div>
+    </th>
+    
+    <th>
+      <div class="box">
+        <div class="dates">
+          <p class="date" id="date9"></p>
+          </div>
+        <img src="https://bmcdn.nl/assets/weather-icons/v1.5/partly-cloudy-day.svg" class="img" />
+        <div class="temp-max">
+          <p class="txt">12&deg;C</p>
+          <svg class="tmpMax9" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+            <line x1="10" y1="180" x2="10" y2="0" />
+          </svg>
+        </div>
+        <div class="temp-min">
+          <p class="txt2">-3&deg;C</p>
+          <svg class="tmpMin9" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+            <line x1="10" y1="0" x2="10" y2="180" />
+          </svg>
+        </div>
+      </div>
+    </th>
+    
+    <th>
+      <div class="box">
+        <div class="dates">
+          <p class="date" id="date10"></p>
+          </div>
+        <img src="https://bmcdn.nl/assets/weather-icons/v1.5/partly-cloudy-day.svg" class="img" />
+        <div class="temp-max">
+          <p class="txt">17&deg;C</p>
+          <svg class="tmpMax10" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+            <line x1="10" y1="180" x2="10" y2="0" />
+          </svg>
+        </div>
+        <div class="temp-min">
+          <p class="txt2">0&deg;C</p>
+          <svg class="tmpMin10" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+            <line x1="10" y1="0" x2="10" y2="180" />
+          </svg>
+        </div>
+      </div>
+    </th>
+    
+    <th>
+      <div class="box">
+        <div class="dates">
+          <p class="date" id="date11"></p>
+          </div>
+        <img src="https://bmcdn.nl/assets/weather-icons/v1.5/clear-day.svg" class="img" />
+        <div class="temp-max">
+          <p class="txt">16&deg;C</p>
+          <svg class="tmpMax11" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+            <line x1="10" y1="180" x2="10" y2="0" />
+          </svg>
+        </div>
+        <div class="temp-min">
+          <p class="txt2">-2&deg;C</p>
+          <svg class="tmpMin11" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+            <line x1="10" y1="0" x2="10" y2="180" />
+          </svg>
+        </div>
+      </div>
+    </th>
+    
+    <th>
+      <div class="box">
+        <div class="dates">
+          <p class="date" id="date12"></p>
+          </div>
+        <img src="https://bmcdn.nl/assets/weather-icons/v1.5/clear-day.svg" class="img" />
+        <div class="temp-max">
+          <p class="txt">13&deg;C</p>
+          <svg class="tmpMax12" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+            <line x1="10" y1="180" x2="10" y2="0" />
+          </svg>
+        </div>
+        <div class="temp-min">
+          <p class="txt2">-4&deg;C</p>
+          <svg class="tmpMin12" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+            <line x1="10" y1="0" x2="10" y2="180" />
+          </svg>
+        </div>
+      </div>
+    </th>
+    
+    <th>
+      <div class="box">
+       <div class="dates">
+          <p class="date" id="date13"></p>
+          </div>
+        <img src="https://bmcdn.nl/assets/weather-icons/v1.5/partly-cloudy-day.svg" class="img" />
+        <div class="temp-max">
+          <p class="txt">9&deg;C</p>
+          <svg class="tmpMax13" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+            <line x1="10" y1="180" x2="10" y2="0" />
+          </svg>
+        </div>
+        <div class="temp-min">
+          <p class="txt2">-5&deg;C</p>
+          <svg class="tmpMin13" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+            <line x1="10" y1="0" x2="10" y2="180" />
+          </svg>
+        </div>
+      </div>
+    </th>
+    
+    <th>
+      <div class="box">
+        <div class="dates">
+          <p class="date" id="date14"></p>
+          </div>
+        <img src="https://bmcdn.nl/assets/weather-icons/v1.5/partly-cloudy-day-sleet.svg" class="img" />
+        <div class="temp-max">
+          <p class="txt">5&deg;C</p>
+          <svg class="tmpMax14" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#FF7100" style="margin-top: 18px;">
+            <line x1="10" y1="180" x2="10" y2="0" />
+          </svg>
+        </div>
+        <div class="temp-min">
+          <p class="txt2">-6&deg;C</p>
+          <svg class="tmpMin14" viewBox="0 0 200 200" width="200" height="200" stroke-width="76" stroke="#00ABFF" style="margin-top: 0px;">
+            <line x1="10" y1="0" x2="10" y2="180" />
+          </svg>
+        </div>
+      </div>
+    </th>
+  </tr>
+</table>
+</div>
+</center>
+  <script>
+  var d = new Date(); {
+    d.setDate(d.getDate());
+    document.getElementById("date").innerHTML = d.getDate() + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+    d.setDate(d.getDate());
+    document.getElementById("date2").innerHTML = d.getDate()+1 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date3").innerHTML = d.getDate()+2 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date4").innerHTML = d.getDate()+3 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date5").innerHTML = d.getDate()+4 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date6").innerHTML = d.getDate()+5 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date7").innerHTML = d.getDate()+6 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date8").innerHTML = d.getDate()+7 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date9").innerHTML = d.getDate()+8 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date10").innerHTML = d.getDate()+9 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date11").innerHTML = d.getDate()+10 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date12").innerHTML = d.getDate()+11 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date13").innerHTML = d.getDate()+12 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  
+  var d = new Date(); {
+  d.setDate(d.getDate());
+  document.getElementById("date14").innerHTML = d.getDate()+13 + "." + (d.getMonth()+1) + "." + d.getFullYear();
+  }
+  </script>
+</body>
+</html>
